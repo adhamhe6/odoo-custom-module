@@ -1,0 +1,43 @@
+<odoo>
+    <!-- Action to Open Absence Records -->
+    <record id="action_attendance_absence" model="ir.actions.act_window">
+        <field name="name">Employee Absence</field>
+        <field name="res_model">attendance.absence</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu Item for Absence -->
+    <menuitem id="menu_attendance_absence"
+              name="Absence"
+              parent="hr_attendance.menu_hr_attendance_root"
+              action="action_attendance_absence"
+              sequence="210"/>
+
+    <!-- Tree View for Absence -->
+    <record id="view_attendance_absence_tree" model="ir.ui.view">
+        <field name="name">attendance.absence.tree</field>
+        <field name="model">attendance.absence</field>
+        <field name="arch" type="xml">
+            <tree string="Employee Absence" create="false">
+                <field name="employee_id" widget="many2one_avatar_user" readonly="1"/>
+                <field name="date" readonly="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View for Absence -->
+    <record id="view_attendance_absence_form" model="ir.ui.view">
+        <field name="name">attendance.absence.form</field>
+        <field name="model">attendance.absence</field>
+        <field name="arch" type="xml">
+            <form string="Employee Absence" create="false">
+                <sheet>
+                    <group>
+                        <field name="employee_id" widget="many2one_avatar_user" readonly="1"/>
+                        <field name="date" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

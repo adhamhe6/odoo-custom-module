@@ -1,0 +1,11 @@
+<odoo>
+    <record id="attendance_absence_demo_1" model="attendance.absence">
+        <field name="employee_id" ref="hr.employee_admin"/> <!-- Ensure an employee exists -->
+        <field name="date">2024-03-01</field>
+    </record>
+
+    <record id="attendance_absence_demo_2" model="attendance.absence">
+        <field name="employee_id" ref="hr.employee_admin"/>
+        <field name="date">2024-03-02</field>
+    </record>
+</odoo>

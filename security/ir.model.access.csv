@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_multi_sale_order_wizard,multi.sale.order.wizard,model_multi_sale_order_wizard,,1,1,1,1
+access_multi_sale_order_line,multi.sale.order.line,model_multi_sale_order_line,,1,1,1,1
+access_hr_attendance_extension,access_hr_attendance_extension,model_hr_attendance,,1,1,0,0
+access_hr_employee_extension,access_hr_employee_extension,model_hr_employee,,1,1,0,0
+access_attendance_absence,access_attendance_absence,model_attendance_absence,,1,0,0,0
+access_custom_move_line,access_custom_move_line,model_custom_move_line,,1,1,1,0
+access_purchase_order_discount,purchase.order.discount,model_purchase_order,,1,1,1,1
